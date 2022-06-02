@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Eflorscuk/MyTicket/issues"
   },
-  "homepage": "https://github.com/Eflorscuk/MyTicket#readme"
+  "homepage": "https://github.com/Eflorscuk/MyTicket#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
