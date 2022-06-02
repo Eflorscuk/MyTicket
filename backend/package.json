@@ -4,6 +4,7 @@
   "description": "Desenvolvimento de Backend para teste",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +13,10 @@
   },
   "keywords": [
     "node",
-    "javascript"
+    "javascript",
+    "express",
+    "body-parser",
+    "nodemon"
   ],
   "author": "Evandro Florscuk",
   "license": "ISC",
