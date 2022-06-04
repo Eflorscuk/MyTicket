@@ -59,8 +59,22 @@ const getEvento = async (req, res, next) => {
         res.status(400).send(error.message)
     }
 }
+
+const updateEvento = async (req, res, next) => {
+    try {
+        const id = req.params.id
+        const data = req.body
+        const evento = await firestore.collection('eventos').doc(id)
+        await evento.update(data)
+        res.send('Evento record update successfuly')
+    } catch (error) {
+        res.status(400).send(error.message)
+    }
+}
+
 module.exports = {
     addEvento,
     getAllEventos,
-    getEvento
+    getEvento,
+    updateEvento
 }

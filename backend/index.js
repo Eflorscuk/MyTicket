@@ -13,4 +13,4 @@ app.use(bodyParser.json())
 
 app.use('/api', eventoRoutes.routes)
 
-app.listen(config.port, () => console.log('App is listening on url http://localhost:' + config.port))
+app.listen(config.port, () => console.log(`App is listening on url http://localhost:${config.port}`))
