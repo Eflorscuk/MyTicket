@@ -14,3 +14,5 @@ class Evento {
         this.ingressosRestantes = ingressosRestantes
     }
 }
+
+module.exports = Evento
