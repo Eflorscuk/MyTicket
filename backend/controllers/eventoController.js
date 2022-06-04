@@ -45,7 +45,22 @@ const getAllEventos = async(req, res, next) => {
     }
 }
 
+const getEvento = async (req, res, next) => {
+    try {
+        const id = req.params.id
+        const evento = await firestore.collection('eventos').doc(id)
+        const data = await evento.get()
+        if(!data.exists) {
+            res.status(404).send('Evento with the given ID not found')
+        } else {
+            res.send(data.data())
+        }
+    } catch (error) {
+        res.status(400).send(error.message)
+    }
+}
 module.exports = {
     addEvento,
-    getAllEventos
+    getAllEventos,
+    getEvento
 }
