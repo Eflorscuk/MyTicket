@@ -1,25 +1,25 @@
 const express = require('express')
-const server = express()
+const index = express()
 const porta = 3001
 
-server.use(express.json())
+index.use(express.json())
 
 const eventos = ['Festa universitária', 'Festa sertaneja', 'Show de Adoniram']
 
 // Retornar um evento
-server.get('/eventos/:index', (req, res) => {
+index.get('/eventos/:index', (req, res) => {
     const { index } = req.params
 
     return res.json(eventos[index])
 })
 
 // Retornar todos os eventos
-server.get('/eventos', (req, res) => {
+index.get('/eventos', (req, res) => {
     return res.json(eventos)
 })
 
 // Criar novo evento
-server.post('/eventos', (req, res) => {
+index.post('/eventos', (req, res) => {
     const { name } = req.body
     eventos.push(name)
 
@@ -27,7 +27,7 @@ server.post('/eventos', (req, res) => {
 })
 
 // atualizar evento
-server.put( '/eventos/:index', (req, res) => {
+index.put( '/eventos/:index', (req, res) => {
     const { index } = req.params
     const { name } = req.body
 
@@ -37,11 +37,11 @@ server.put( '/eventos/:index', (req, res) => {
 })
 
 // Deletar eventos
-server.delete('/eventos/:index', (req, res) => {
+index.delete('/eventos/:index', (req, res) => {
     const { index } = req.params
 
     eventos.splice(index, 1)
     return res.json({ message: "O evento foi deletado"})
 })
 
-server.listen(porta, () => console.log(`escutando na porta ${porta}`))
+index.listen(porta, () => console.log(`escutando na porta ${porta}`))
