@@ -23,7 +23,7 @@ const getAllEventos = async(req, res, next) => {
             res.status(404).send('No event record found')
         } else {
             data.forEach(doc => {
-                const student = new Evento(
+                const evento = new Evento(
                     doc.id,
                     doc.data().nome,
                     doc.data().precoPorIngresso,
