@@ -72,9 +72,20 @@ const updateEvento = async (req, res, next) => {
     }
 }
 
+const deleteEvento = async (req, res, next) => {
+    try {
+        const id = req.params.id
+        await firestore.collection('eventos').doc(id).delete
+        res.send('Evento deleted sucessfuly')
+    } catch (error) {
+        res.status(400).send(error.message)
+    }
+}
+
 module.exports = {
     addEvento,
     getAllEventos,
     getEvento,
-    updateEvento
+    updateEvento,
+    deleteEvento
 }
