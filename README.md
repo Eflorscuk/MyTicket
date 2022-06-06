@@ -8,9 +8,9 @@ O presente sistema tem como objetivo em ser um app de compras de ingressos para 
 utilizo JavaScript e o runtime Node.
 
 ## Stacks
-![Badge](https://img.shields.io/badge/Projeto-JavaScript-%09%23fada28)
-![Badge](https://img.shields.io/badge/Node-v16.14.2-%09%23fada28)
-![Badge](https://img.shields.io/badge/Npm-v8.7.0-%09%23fada28)
+![Badge](https://img.shields.io/badge/Projeto-JavaScript-yellow)
+![Badge](https://img.shields.io/badge/Node-v16.14.2-yellow)
+![Badge](https://img.shields.io/badge/Npm-v8.7.0-yellow)
 ![Badge](https://img.shields.io/badge/-Docker-%230000A0)
 ![Badge](https://img.shields.io/badge/-Dockerhub-%230000A0)
 
