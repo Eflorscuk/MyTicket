@@ -105,7 +105,7 @@ Em seu navegador, entre em http://localhost:80 para verificar se a aplicação e
 
 ## Teste da API com o Insomnia com o Docker
 
-** Observação** Para executar os testes com o Insomnia, lembre-se de executar os passos do Docker primeiro
+**Observação** Para executar os testes com o Insomnia, lembre-se de executar os passos do Docker primeiro
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=My%20Ticket%20Docker&uri=https%3A%2F%2Fraw.githubusercontent.com%2FEflorscuk%2FMyTicket%2Fmaster%2Ftest%2FInsomnia_2022-06-06_Docker.json)
 
