@@ -1,5 +1,18 @@
 # Projeto My Ticket
 
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Status do Projeto](#Status do Projeto)
+   * [Descrição do Projeto](#Descrição do Projeto)
+   * [Tecnologias](#Tecnologias)
+   * [Iniciando o projeto (Backend)](#Iniciando o projeto (Backend))
+   * [Dockerizing para desenvolvimento](#Dockerizing para desenvolvimento)
+   * [Realizando building da imagem do projeto](#Realizando building da imagem do projeto)
+   * [Utilizando Dockerhub para trabalhar com imagens](#Utilizando Dockerhub para trabalhar com imagens) 
+   * [Teste da API com o Insomnia sem o Docker](# da API com o Insomnia sem o Docker)
+<!--te-->
+
 ## Status do Projeto
 🚧  Projeto MyTicket 🚀 Em construção...  🚧
 
@@ -7,7 +20,7 @@
 O presente sistema tem como objetivo em ser um app de compras de ingressos para enventos. Para tanto,
 utilizo JavaScript e o runtime Node.
 
-## Stacks
+## Tecnologias
 ![Badge](https://img.shields.io/badge/Projeto-JavaScript-yellow)
 ![Badge](https://img.shields.io/badge/Node-v16.14.2-yellow)
 ![Badge](https://img.shields.io/badge/Npm-v8.7.0-yellow)
@@ -42,7 +55,7 @@ docker -v
 
 Caso não tenha, siga as instruções de https://docs.docker.com/engine/install/ubuntu/
 
-## Realizando building da sua imagem
+## Realizando building da imagem do projeto
 
 No diretório onde está presente o Dockerfile - neste caso na pasta backend -, rode o comando: 
 
@@ -59,7 +72,7 @@ docker run --name nodejs-image-myticket -p 80:8080 -d evandroooff/nodejs-image-m
 
 Por fim, em seu navegador, entre em http://localhost:80 para verificar se a aplicação está em execução.
 
-### Utilizando um repositório para trabalhar com imagens
+### Utilizando Dockerhub para trabalhar com imagens
 
 Ao invés de realizar o building da imagem no passo anterior, você pode realizar as seguintes etapas:
 
@@ -83,7 +96,7 @@ docker run --name nodejs-image-myticket -p 80:8080 -d evandroooff/nodejs-image-m
 
 Em seu navegador, entre em http://localhost:80 para verificar se a aplicação está em execução.
 
-## Teste da API com o Insomnia
+## Teste da API com o Insomnia sem o Docker
 
 **Observação** Para você executar os testes com o Insomnia, lembre-se de rodar o servidor com o comando ``` shell npm start ``` na pasta backend, conforme visto nos passos anteriores
 
