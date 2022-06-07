@@ -1,16 +1,16 @@
 # Projeto My Ticket
 
 Tabela de conteúdos
-=================
+===================
 <!--ts-->
-   * [Status do Projeto](#Status do Projeto)
-   * [Descrição do Projeto](#Descrição do Projeto)
+   * [Status do Projeto](#Status-do-Projeto)
+   * [Descrição do Projeto](#Descrição-do-Projeto)
    * [Tecnologias](#Tecnologias)
-   * [Iniciando o projeto (Backend)](#Iniciando o projeto (Backend))
-   * [Dockerizing para desenvolvimento](#Dockerizing para desenvolvimento)
-   * [Realizando building da imagem do projeto](#Realizando building da imagem do projeto)
-   * [Utilizando Dockerhub para trabalhar com imagens](#Utilizando Dockerhub para trabalhar com imagens) 
-   * [Teste da API com o Insomnia sem o Docker](# da API com o Insomnia sem o Docker)
+   * [Iniciando o projeto (Backend)](#Iniciando-o-projeto-(Backend))
+   * [Dockerizing para desenvolvimento](#Dockerizing-para-desenvolvimento)
+   * [Realizando building da imagem do projeto](#Realizando-building-da-imagem-do-projeto)
+   * [Utilizando Dockerhub para trabalhar com imagens](#Utilizando-Dockerhub-para-trabalhar-com-imagens) 
+   * [Teste da API com o Insomnia sem o Docker](#Teste-da-API-com-o-Insomnia-sem-o-Docker)
 <!--te-->
 
 ## Status do Projeto
