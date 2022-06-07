@@ -31,6 +31,8 @@ e inicie o server com o comando
 npm start
 ```
 
+Por último, acesse http://localhost:8080 para verificar se o app está funcionando.
+
 ## Dockerizing para desenvolvimento
 
 Primeiro, tenha certeza que você tenha docker ou docker-compose instalado em sua máquina com o comando
