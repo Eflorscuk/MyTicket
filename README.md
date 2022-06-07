@@ -1,4 +1,4 @@
-# Teste do Projeto My Ticket
+# Projeto My Ticket
 
 ## Status do Projeto
 🚧  Projeto MyTicket 🚀 Em construção...  🚧
@@ -82,3 +82,11 @@ docker run --name nodejs-image-myticket -p 80:8080 -d evandroooff/nodejs-image-m
 ```
 
 Em seu navegador, entre em http://localhost:80 para verificar se a aplicação está em execução.
+
+## Teste da API com o Insomnia
+
+**Observação** Para você executar os testes com o Insomnia, lembre-se de rodar o servidor com o comando ``` shell npm start ``` na pasta backend, conforme visto nos passos anteriores
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=My%20Ticket&uri=https%3A%2F%2Fraw.githubusercontent.com%2FEflorscuk%2FMyTicket%2Fmaster%2Ftest%2FInsomnia_2022-06-06.json)
+
+
