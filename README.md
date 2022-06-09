@@ -6,12 +6,14 @@ Tabela de conteúdos
    * [Status do Projeto](#Status-do-Projeto)
    * [Descrição do Projeto](#Descrição-do-Projeto)
    * [Tecnologias](#Tecnologias)
+   * [Packages](#Packages)
+   * [Configurando o DB](#Configurando-o-DB)
    * [Iniciando o projeto (Backend)](#Iniciando-o-projeto-(Backend))
    * [Dockerizing para desenvolvimento](#Dockerizing-para-desenvolvimento)
    * [Realizando building da imagem do projeto](#Realizando-building-da-imagem-do-projeto)
    * [Utilizando Dockerhub para trabalhar com imagens](#Utilizando-Dockerhub-para-trabalhar-com-imagens) 
    * [Teste da API com o Insomnia sem o Docker](#Teste-da-API-com-o-Insomnia-sem-o-Docker)
-   *[Teste da API com o Insomnia com o Docker](#Teste-da-API-com-o-Insomnia-com-o-Docker)
+   * [Teste da API com o Insomnia com o Docker](#Teste-da-API-com-o-Insomnia-com-o-Docker)
 <!--te-->
 
 ## Status do Projeto
@@ -19,7 +21,7 @@ Tabela de conteúdos
 
 ## Descrição do Projeto
 O presente sistema tem como objetivo em ser um app de compras de ingressos para enventos. Para tanto,
-utilizo JavaScript e o runtime Node.
+utilizo ***JavaScript*** e o ***runtime Node***.
 
 ## Tecnologias
 ![Badge](https://img.shields.io/badge/Projeto-JavaScript-yellow)
@@ -27,9 +29,24 @@ utilizo JavaScript e o runtime Node.
 ![Badge](https://img.shields.io/badge/Npm-v8.7.0-yellow)
 ![Badge](https://img.shields.io/badge/-Docker-%230000A0)
 ![Badge](https://img.shields.io/badge/-Dockerhub-%230000A0)
+![Badge](https://img.shields.io/badge/-Firebase-gray)
+
+## Packages
+![Badge](https://img.shields.io/badge/Body--parser-1.20.0-yellow)
+![Badge](https://img.shields.io/badge/Cors-2.8.5-yellow)
+![Badge](https://img.shields.io/badge/Dotenv-16.0.1-yellow)
+![Badge](https://img.shields.io/badge/Express-4.18.1-yellow)
+![Badge](https://img.shields.io/badge/Firebase-8.0.1-yellow)
+![Badge](https://img.shields.io/badge/Nodemon-2.0.16-yellow)
 
 # Iniciando o projeto (Backend)
 
+## Configurando o DB
+Optei em fazer meu banco de dados em ***Firebase***, para tanto, é necessário ter uma conta no mesmo, acessar o console e criar o banco de dados.
+
+criei um arquivo ***.env-example*** para servir como parâmetro para a configuração das variáveis de ambiente, sendo assim, torna-se necessária a criação de um arquivo ***.env*** para a configuração do projeto.
+
+## Levantando o Server
 Vá para a pasta de backend
 ``` shell
 cd backend
@@ -49,7 +66,7 @@ Por último, acesse http://localhost:8080 para verificar se o app está funciona
 
 ## Dockerizing para desenvolvimento
 
-Primeiro, tenha certeza que você tenha docker ou docker-compose instalado em sua máquina com o comando
+Primeiro, tenha certeza que você tenha ***docker*** ou ***docker-compose*** instalado em sua máquina com o comando
 ``` shell
 docker -v
 ```
@@ -58,7 +75,7 @@ Caso não tenha, siga as instruções de https://docs.docker.com/engine/install/
 
 ## Realizando building da imagem do projeto
 
-No diretório onde está presente o Dockerfile - neste caso na pasta backend -, rode o comando: 
+No diretório onde está presente o ***Dockerfile*** - neste caso na pasta backend -, rode o comando: 
 
 ``` shell
 docker build -t evandroooff/nodejs-image-myticket
@@ -83,7 +100,7 @@ Primeiro realize o login do docker em seu terminal
 docker login -u seu_usuário_dockerhub -p sua_senha_dockerhub
 ```
 
-Depois baixe a imagem da aplicação do Dockerhub 
+Depois baixe a imagem da aplicação do ***Dockerhub*** 
 
 ``` shell
 docker pull evandroooff/nodejs-image-myticket
@@ -99,7 +116,7 @@ Em seu navegador, entre em http://localhost:80 para verificar se a aplicação e
 
 ## Teste da API com o Insomnia sem o Docker
 
-**Observação** Para executar os testes com o Insomnia, lembre-se de rodar o servidor com o comando ``` shell npm start ``` na pasta backend, conforme visto nos passos anteriores
+**Observação** Para executar os testes com o ***Insomnia***, lembre-se de rodar o servidor com o comando ``` shell npm start ``` na pasta backend, conforme visto nos passos anteriores
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=My%20Ticket&uri=https%3A%2F%2Fraw.githubusercontent.com%2FEflorscuk%2FMyTicket%2Fmaster%2Ftest%2FInsomnia_2022-06-06.json)
 
